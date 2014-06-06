@@ -15,7 +15,7 @@ if (empty($_SESSION[SESSION_KEY])) {
 
 $_SESSION[SESSION_KEY]++;
 ?>
-<h1>Dyno=getenv('DYNO')</h1>
+<h1>Dyno <?= htmlspecialchars(getenv('DYNO')) ?></h1>
 <div>
 <?php var_dump($_SESSION) ?>
 </div>
