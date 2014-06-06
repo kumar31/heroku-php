@@ -14,5 +14,8 @@ if (empty($_SESSION[SESSION_KEY])) {
 }
 
 $_SESSION[SESSION_KEY]++;
-
-var_dump($_SESSION);
+?>
+<h1>Dyno=getenv('DYNO')</h1>
+<div>
+<?php var_dump($_SESSION) ?>
+</div>
